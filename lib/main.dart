@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:templete/routes/routes.dart';
-import 'package:templete/themes/theme.dart';
+import 'package:casket/routes/routes.dart';
+import 'package:casket/themes/theme.dart';
 
-import 'package:templete/features/view/home.dart';
+import 'package:casket/features/view/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: routes,
       theme: theme,
       home: Home(),
